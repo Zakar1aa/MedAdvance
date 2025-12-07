@@ -1,6 +1,9 @@
 // components/LoadingAnimation.js
 import React, { useEffect, useRef } from 'react';
 import { Animated, StyleSheet, Text } from 'react-native';
+import theme from '../styles/theme';
+
+const { colors } = theme;
 
 export default function LoadingAnimation({ message }) {
   const fadeAnim = useRef(new Animated.Value(0)).current;
@@ -44,13 +47,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5F5F5',
+    backgroundColor: colors.background,
   },
   circle: {
     width: 120,
     height: 120,
     borderRadius: 60,
-    backgroundColor: '#00A0DC',
+    backgroundColor: colors.primary,
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 24,
@@ -61,7 +64,7 @@ const styles = StyleSheet.create({
   message: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#00A0DC',
+    color: colors.primary,
     textAlign: 'center',
     paddingHorizontal: 32,
   },

@@ -11,8 +11,8 @@ export default function RootLayout() {
   useEffect(() => {
     async function hideSplash() {
       try {
-        // Simulate app initialization (remove if you have real initialization)
-        await new Promise((resolve) => setTimeout(resolve, 1500));
+        // Give the app time to fully load and render
+        await new Promise((resolve) => setTimeout(resolve, 2500));
         
         // Hide the native splash screen
         await SplashScreen.hideAsync();

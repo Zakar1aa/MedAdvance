@@ -3,6 +3,9 @@ import { router } from 'expo-router';
 import React, { useState } from 'react';
 import { Platform, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { mockPharmacies } from '../services/mockData';
+import theme from '../styles/theme';
+
+const { colors } = theme;
 
 export default function PharmacySelectionScreen({ creditLimit }) {
   const [selectedPharmacy, setSelectedPharmacy] = useState(null);
@@ -85,35 +88,35 @@ export default function PharmacySelectionScreen({ creditLimit }) {
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
+    backgroundColor: colors.background,
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   container: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
+    backgroundColor: colors.background,
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.card,
     paddingVertical: 16,
     paddingHorizontal: 20,
     borderBottomWidth: 1,
-    borderBottomColor: '#E0E0E0',
+    borderBottomColor: colors.border,
   },
   backButton: {
     fontSize: 24,
     marginRight: 12,
-    color: '#333',
+    color: colors.text,
   },
   headerTitle: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#333',
+    color: colors.text,
   },
   mapContainer: {
     height: 200,
-    backgroundColor: '#E8F4F8',
+    backgroundColor: colors.brand.ceruleanLight,
   },
   mapPlaceholder: {
     flex: 1,
@@ -129,7 +132,7 @@ const styles = StyleSheet.create({
   },
   pharmacyCard: {
     flexDirection: 'row',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.card,
     borderRadius: 12,
     padding: 16,
     marginBottom: 12,
@@ -137,13 +140,13 @@ const styles = StyleSheet.create({
     borderColor: 'transparent',
   },
   pharmacyCardSelected: {
-    borderColor: '#00A0DC',
+    borderColor: colors.primary,
   },
   pharmacyIcon: {
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#E3F2FD',
+    backgroundColor: colors.brand.ceruleanLight,
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 12,
@@ -157,7 +160,7 @@ const styles = StyleSheet.create({
   pharmacyName: {
     fontSize: 16,
     fontWeight: '600',
-    color: '#333',
+    color: colors.text,
     marginBottom: 4,
   },
   pharmacyStatus: {
@@ -170,17 +173,17 @@ const styles = StyleSheet.create({
   },
   pharmacyAddress: {
     fontSize: 13,
-    color: '#666',
+    color: colors.textLight,
   },
   pharmacyMeta: {
     justifyContent: 'center',
   },
   pharmacyDistance: {
     fontSize: 13,
-    color: '#999',
+    color: colors.textLight,
   },
   continueButton: {
-    backgroundColor: '#FF8C42',
+    backgroundColor: colors.secondary,
     borderRadius: 12,
     paddingVertical: 16,
     alignItems: 'center',

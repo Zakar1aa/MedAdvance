@@ -1,5 +1,8 @@
 // components/PharmacyCard.js
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import theme from '../styles/theme';
+
+const { colors } = theme;
 
 export default function PharmacyCard({ pharmacy, onSelect, selected }) {
   return (
@@ -28,16 +31,16 @@ export default function PharmacyCard({ pharmacy, onSelect, selected }) {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.card,
     borderRadius: 12,
     padding: 16,
     marginBottom: 16,
     borderWidth: 2,
-    borderColor: '#E0E0E0',
+    borderColor: colors.border,
   },
   cardSelected: {
-    borderColor: '#00A0DC',
-    backgroundColor: '#F0F9F4',
+    borderColor: colors.primary,
+    backgroundColor: colors.background,
   },
   header: {
     flexDirection: 'row',
@@ -48,11 +51,11 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#333',
+    color: colors.text,
     flex: 1,
   },
   badge: {
-    backgroundColor: '#00A0DC',
+    backgroundColor: colors.primary,
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 12,
@@ -64,12 +67,12 @@ const styles = StyleSheet.create({
   },
   address: {
     fontSize: 16,
-    color: '#333',
+    color: colors.text,
     marginBottom: 4,
   },
   city: {
     fontSize: 14,
-    color: '#666',
+    color: colors.textLight,
     marginBottom: 8,
   },
   footer: {
@@ -78,14 +81,14 @@ const styles = StyleSheet.create({
     marginTop: 8,
     paddingTop: 8,
     borderTopWidth: 1,
-    borderTopColor: '#E0E0E0',
+    borderTopColor: colors.border,
   },
   distance: {
     fontSize: 14,
-    color: '#666',
+    color: colors.textLight,
   },
   rating: {
     fontSize: 14,
-    color: '#666',
+    color: colors.textLight,
   },
 });

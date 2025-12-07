@@ -195,19 +195,19 @@ export default function TestScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
+    backgroundColor: colors.background,
   },
   header: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.card,
     paddingVertical: 20,
     paddingHorizontal: 20,
     borderBottomWidth: 1,
-    borderBottomColor: '#E0E0E0',
+    borderBottomColor: colors.border,
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#333',
+    color: colors.text,
   },
   content: {
     flex: 1,
@@ -218,26 +218,26 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#333',
+    color: colors.text,
     marginBottom: 16,
   },
   button: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.card,
     borderRadius: 12,
     padding: 16,
     marginBottom: 12,
     borderWidth: 1,
-    borderColor: '#E0E0E0',
+    borderColor: colors.border,
   },
   buttonPrimary: {
-    backgroundColor: '#00A0DC',
-    borderColor: '#00A0DC',
+    backgroundColor: colors.primary,
+    borderColor: colors.primary,
     marginTop: 8,
   },
   buttonText: {
     fontSize: 16,
     fontWeight: '600',
-    color: '#333',
+    color: colors.text,
     textAlign: 'center',
   },
   buttonTextWhite: {
@@ -250,10 +250,10 @@ const styles = StyleSheet.create({
   loadingText: {
     marginTop: 16,
     fontSize: 16,
-    color: '#666',
+    color: colors.textLight,
   },
   resultsCard: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.card,
     borderRadius: 12,
     padding: 16,
   },
@@ -266,12 +266,12 @@ const styles = StyleSheet.create({
   },
   resultLabel: {
     fontSize: 16,
-    color: '#666',
+    color: colors.textLight,
   },
   resultValue: {
     fontSize: 16,
     fontWeight: '600',
-    color: '#333',
+    color: colors.text,
   },
   textSuccess: {
     color: '#4CAF50',
@@ -315,14 +315,14 @@ const styles = StyleSheet.create({
   testName: {
     fontSize: 16,
     fontWeight: '600',
-    color: '#333',
+    color: colors.text,
     marginBottom: 8,
   },
   testDetails: {
     fontSize: 12,
     fontFamily: 'monospace',
-    color: '#666',
-    backgroundColor: '#F5F5F5',
+    color: colors.textLight,
+    backgroundColor: colors.background,
     padding: 8,
     borderRadius: 4,
   },

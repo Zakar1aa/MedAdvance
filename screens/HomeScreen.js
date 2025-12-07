@@ -26,7 +26,6 @@ export default function HomeScreen() {
       {/* Professional Header with CIH Branding and User Profile */}
       <View style={[styles.header]}>
         <View style={styles.headerLeft}>
-          <MaterialIcons name="account-balance" size={24} color={colors.primary} />
           <Text style={styles.logo}>CIH</Text>
         </View>
         <View style={styles.profileSection}>
@@ -142,9 +141,10 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   logo: {
-    fontSize: typography.h2.fontSize,
-    fontWeight: 'bold',
-    color: colors.primary,
+    fontSize: 28,
+    fontWeight: '800',
+    color: '#000000',
+    letterSpacing: 2,
   },
   profileSection: {
     flexDirection: 'row',

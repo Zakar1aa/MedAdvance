@@ -62,32 +62,32 @@ export default function NotEligibleScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
+    backgroundColor: colors.background,
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.card,
     paddingVertical: 16,
     paddingHorizontal: 20,
     borderBottomWidth: 1,
-    borderBottomColor: '#E0E0E0',
+    borderBottomColor: colors.border,
   },
   backButton: {
     fontSize: 24,
     marginRight: 12,
-    color: '#333',
+    color: colors.text,
   },
   headerTitle: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#333',
+    color: colors.text,
   },
   content: {
     padding: 20,
   },
   limitCard: {
-    backgroundColor: '#00A0DC',
+    backgroundColor: colors.primary,
     borderRadius: 16,
     padding: 24,
     alignItems: 'center',
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
   },
   requestButton: {
-    backgroundColor: '#FF8C42',
+    backgroundColor: colors.secondary,
     borderRadius: 12,
     paddingVertical: 16,
     alignItems: 'center',
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
   },
   statusCard: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.card,
     borderRadius: 16,
     padding: 20,
     marginBottom: 24,
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
   statusTitle: {
     fontSize: 12,
     fontWeight: '600',
-    color: '#666',
+    color: colors.textLight,
     marginBottom: 16,
   },
   statusRow: {
@@ -151,10 +151,10 @@ const styles = StyleSheet.create({
   },
   statusText: {
     fontSize: 15,
-    color: '#333',
+    color: colors.text,
   },
   cancelButton: {
-    backgroundColor: '#FF8C42',
+    backgroundColor: colors.secondary,
     borderRadius: 12,
     paddingVertical: 16,
     alignItems: 'center',

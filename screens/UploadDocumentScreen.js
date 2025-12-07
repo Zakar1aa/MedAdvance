@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   card: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.card,
     borderRadius: 16,
     padding: 24,
     shadowColor: '#000',
@@ -137,25 +137,25 @@ const styles = StyleSheet.create({
   cardTitle: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#FF8C42',
+    color: colors.secondary,
     marginBottom: 8,
   },
   cardSubtitle: {
     fontSize: 13,
-    color: '#666',
+    color: colors.textLight,
     lineHeight: 20,
     marginBottom: 32,
   },
   cardNote: {
     fontSize: 13,
-    color: '#666',
+    color: colors.textLight,
     marginBottom: 16,
   },
   uploadContainer: {
     alignItems: 'center',
     paddingVertical: 40,
     borderWidth: 2,
-    borderColor: '#E0E0E0',
+    borderColor: colors.border,
     borderRadius: 12,
     borderStyle: 'dashed',
   },
@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
   },
   uploadLabel: {
     fontSize: 14,
-    color: '#00A0DC',
+    color: colors.primary,
   },
   timeline: {
     flexDirection: 'row',
@@ -177,23 +177,23 @@ const styles = StyleSheet.create({
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: '#FF8C42',
+    backgroundColor: colors.secondary,
   },
   timelineDotInactive: {
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: '#E0E0E0',
+    backgroundColor: colors.border,
   },
   timelineLine: {
     width: 60,
     height: 2,
-    backgroundColor: '#E0E0E0',
+    backgroundColor: colors.border,
     marginHorizontal: 8,
   },
   skipButton: {
     borderWidth: 1,
-    borderColor: '#00A0DC',
+    borderColor: colors.primary,
     borderRadius: 12,
     paddingVertical: 16,
     alignItems: 'center',
@@ -202,10 +202,10 @@ const styles = StyleSheet.create({
   skipButtonText: {
     fontSize: 16,
     fontWeight: '600',
-    color: '#00A0DC',
+    color: colors.primary,
   },
   continueButton: {
-    backgroundColor: '#FF8C42',
+    backgroundColor: colors.secondary,
     borderRadius: 12,
     paddingVertical: 16,
     alignItems: 'center',

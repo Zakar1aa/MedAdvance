@@ -3,6 +3,9 @@ import Slider from '@react-native-community/slider';
 import { router } from 'expo-router';
 import { useState } from 'react';
 import { Platform, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import theme from '../styles/theme';
+
+const { colors, spacing, typography } = theme;
 
 export default function AmountSelectionScreen({ creditLimit, pharmacy }) {
   const [amount, setAmount] = useState(500);
@@ -26,7 +29,7 @@ export default function AmountSelectionScreen({ creditLimit, pharmacy }) {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="dark-content" backgroundColor="#F5F5F5" />
+      <StatusBar barStyle="dark-content" backgroundColor={colors.background} />
       <View style={styles.container}>
         <View style={styles.header}>
         <TouchableOpacity onPress={() => router.back()}>
@@ -52,9 +55,9 @@ export default function AmountSelectionScreen({ creditLimit, pharmacy }) {
             step={100}
             value={amount}
             onValueChange={setAmount}
-            minimumTrackTintColor="#00A0DC"
-            maximumTrackTintColor="#E0E0E0"
-            thumbTintColor="#FF8C42"
+            minimumTrackTintColor={colors.primary}
+            maximumTrackTintColor={colors.border}
+            thumbTintColor={colors.secondary}
           />
           <View style={styles.sliderLabels}>
             <Text style={styles.sliderLabel}>500 DH</Text>
@@ -84,31 +87,31 @@ export default function AmountSelectionScreen({ creditLimit, pharmacy }) {
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
+    backgroundColor: colors.background,
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   container: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
+    backgroundColor: colors.background,
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.card,
     paddingVertical: 16,
     paddingHorizontal: 20,
     borderBottomWidth: 1,
-    borderBottomColor: '#E0E0E0',
+    borderBottomColor: colors.border,
   },
   backButton: {
     fontSize: 24,
     marginRight: 12,
-    color: '#333',
+    color: colors.text,
   },
   headerTitle: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#333',
+    color: colors.text,
   },
   content: {
     padding: 20,
@@ -116,12 +119,12 @@ const styles = StyleSheet.create({
   question: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#333',
+    color: colors.text,
     marginBottom: 24,
     textAlign: 'center',
   },
   amountCard: {
-    backgroundColor: '#00A0DC',
+    backgroundColor: colors.primary,
     borderRadius: 16,
     padding: 24,
     alignItems: 'center',
@@ -157,10 +160,10 @@ const styles = StyleSheet.create({
   },
   sliderLabel: {
     fontSize: 13,
-    color: '#666',
+    color: colors.textLight,
   },
   repaymentCard: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.card,
     borderRadius: 16,
     padding: 24,
     alignItems: 'center',
@@ -168,38 +171,38 @@ const styles = StyleSheet.create({
   },
   repaymentTitle: {
     fontSize: 14,
-    color: '#666',
+    color: colors.textLight,
     marginBottom: 12,
   },
   repaymentAmount: {
     fontSize: 36,
     fontWeight: 'bold',
-    color: '#333',
+    color: colors.text,
     marginBottom: 8,
   },
   repaymentSubtext: {
     fontSize: 16,
-    color: '#666',
+    color: colors.textLight,
     marginBottom: 8,
   },
   repaymentTotal: {
     fontSize: 14,
-    color: '#666',
+    color: colors.textLight,
     marginBottom: 16,
   },
   breakdown: {
     width: '100%',
     paddingTop: 16,
     borderTopWidth: 1,
-    borderTopColor: '#E0E0E0',
+    borderTopColor: colors.border,
   },
   breakdownText: {
     fontSize: 14,
-    color: '#666',
+    color: colors.textLight,
     marginBottom: 8,
   },
   continueButton: {
-    backgroundColor: '#FF8C42',
+    backgroundColor: colors.secondary,
     borderRadius: 12,
     paddingVertical: 16,
     alignItems: 'center',

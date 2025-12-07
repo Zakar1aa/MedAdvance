@@ -4,8 +4,8 @@
  * 
  * Brand Colors:
  * - Primary: Cerulean Blue (#00A0E1)
- * - Secondary: Walnut Brown (#764318)
- * - Accent: Romantic Peach (#FFCDB2)
+ * - Secondary: Vibrant Orange (#FF8C42)
+ * - Accent: Light Orange (#FFB366)
  * 
  * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
  */

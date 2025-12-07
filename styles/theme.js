@@ -1,17 +1,17 @@
 /**
  * CIH Bank Official Brand Colors
  * Primary Color: Cerulean Blue (#00A0E1)
- * Secondary Color: Walnut Brown (#764318)
- * Accent Color: Romantic Peach (#FFCDB2)
+ * Secondary Color: Vibrant Orange (#FF8C42)
+ * Accent Color: Light Orange (#FFB366)
  */
 export const colors = {
   // Primary CIH Brand Colors
   primary: '#00A0E1', // Cerulean Blue
-  secondary: '#764318', // Walnut Brown
-  accent: '#FFCDB2', // Romantic Peach
+  secondary: '#FF8C42', // Vibrant Orange
+  accent: '#FFB366', // Light Orange
   
   // UI Colors
-  background: '#F5F5F5',
+  background: '#FFFFFF',
   card: '#FFFFFF',
   text: '#333333',
   textLight: '#666666',
@@ -25,11 +25,11 @@ export const colors = {
   // Brand Specific Colors (Semantic Naming)
   brand: {
     ceruleanBlue: '#00A0E1',
-    romanticPeach: '#FFCDB2',
-    walnutBrown: '#764318',
+    vibrantOrange: '#FF8C42',
+    accentOrange: '#FFB366',
     ceruleanLight: '#33B3E8',
     ceruleanDark: '#0080B8',
-    peachLight: '#FFE5D9',
+    orangeLight: '#FFD699',
   },
 };
 
@@ -38,9 +38,9 @@ export const colors = {
  */
 export const gradients = {
   primary: ['#00A0E1', '#0080B8'], // Cerulean Blue to darker blue
-  card: ['#00A0E1', '#FFCDB2'], // Cerulean to Peach
-  accent: ['#FFCDB2', '#FFB89A'], // Peach variations
-  dark: ['#764318', '#4A2A0F'], // Walnut Brown variations
+  card: ['#00A0E1', '#FF8C42'], // Cerulean to Orange
+  accent: ['#FF8C42', '#FFB366'], // Orange variations
+  dark: ['#FF8C42', '#E67A30'], // Orange variations
 };
 
 /**
