@@ -1,11 +1,19 @@
 /**
+ * CIH Bank Brand Color Palette - Official Design Tokens
  * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
+ * 
+ * Brand Colors:
+ * - Primary: Cerulean Blue (#00A0E1)
+ * - Secondary: Walnut Brown (#764318)
+ * - Accent: Romantic Peach (#FFCDB2)
+ * 
  * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
  */
 
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
+// CIH Bank Cerulean Blue - Primary Brand Color
+const tintColorLight = '#00A0E1';
 const tintColorDark = '#fff';
 
 export const Colors = {
@@ -15,7 +23,7 @@ export const Colors = {
     tint: tintColorLight,
     icon: '#687076',
     tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
+    tabIconSelected: tintColorLight, // Cerulean Blue for selected tabs
   },
   dark: {
     text: '#ECEDEE',
